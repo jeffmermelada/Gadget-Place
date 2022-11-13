@@ -1,0 +1,270 @@
+.menu{
+
+    display: inline-block;
+    margin: auto;
+
+}
+
+#url-active{
+    visibility: hidden;
+}
+
+.menu-list ul, .menu-list li {
+
+	margin: 0;
+	padding: 0;
+}
+.menu-list ul {
+
+	list-style: none;
+	width: 100%;
+}
+
+.menu-list li {
+
+	float: left;
+	position: relative;
+	width:auto;
+    padding: 5px;
+}
+
+.menu-list a {
+
+    color: black;
+	display: block;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+    border-radius: 10px;
+}
+
+.sub-menu a {
+
+    color: white;
+	display: block;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+    border-radius: 10px;
+}
+
+.sub-menu img{
+    filter: invert();
+}
+
+/* Submenu */
+
+.sub-menu {
+    transition: 500ms;
+    opacity: 0;
+	left: 0;
+	position: absolute;
+	visibility: hidden;
+    border-radius: 10px;
+    background-color: #081C15;
+    z-index: 0;
+}
+
+
+.menu-list li:hover ul.sub-menu{
+    height: auto;
+    opacity: 1;
+    transition-timing-function: ease;
+    visibility: visible;
+	top: 50px;	/* adjust this as per top nav padding top & bottom comes */
+	z-index: 10;
+}
+
+.sub-menu li {
+
+	float: none;
+	width: 100%;
+
+}
+
+
+/*Hovers */
+.menu .menu-list li a:hover{
+
+    color: white;
+    background: #005121;
+    transition: 400ms;  
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.288);
+}
+
+.menu .menu-list li .op{
+
+    color: white;
+    background: #005121;
+    transition: 400ms;  
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.288);
+
+}
+
+.menu ul li .op  > img{
+
+    filter: invert();
+}
+
+.menu ul li a:hover > img{
+
+    filter: invert();
+    transition: 400ms;  
+}
+
+.menu ul li:hover > ul { 
+    
+    display:inline-block;
+}
+
+.menu ul .carrito-menu {
+    visibility: hidden;
+    position: absolute;
+}
+
+/*Fin hovers*/
+
+
+
+.chkbtn{
+    font-size: 50px;
+    float:right;
+    line-height: 10px;
+    margin-left: 20px;
+    cursor:pointer;
+    color:azure;
+    display: none;
+
+}
+#menu-item{
+
+    display:none;
+
+}
+@media(max-width: 952px){
+
+    .logo{
+
+        padding-left: 20px;
+
+    }
+    .menu ul li a{
+
+        font-size: 12px;
+
+
+    }
+
+}
+@media(max-width: 800px){
+
+    .space{
+
+        padding-top: 27%;
+    
+    }
+
+    .chkbtn{
+
+        display: block;
+        margin: auto;
+
+    }
+
+    .slider{
+        display: block;
+        height: auto;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        margin: auto;
+        float: auto;
+    }
+
+    /* CARRITO DE COMPRA */
+
+    .carrito-menu{
+        visibility: visible;
+        position: fixed;
+        
+    }
+    .carrito-menu img{
+        
+        margin-right: 5px;
+    }
+
+    .carrito-activo{
+        visibility: hidden;
+        position: absolute;
+        z-index: 0;
+        
+
+    }
+
+    /* MENU DESLIZABLE */
+
+
+    .barra-busqueda i{
+        visibility: hidden;
+    }
+
+    .barra-busqueda{
+        padding-top: 30px;
+    }
+
+    .menu-list{
+        position: fixed;
+        width: 100%;
+        height: 100vh;     
+        top: 190px;
+        right: -200%;
+        text-align: center;
+        transition: all .5s;
+        background-color: white;
+    }
+
+    .sub-menu {
+        opacity: 1;
+        visibility: visible;
+		position: static;
+        border-radius: 0%;
+        height: 0%;
+        color: black;
+        background-color: #081C15;
+	}
+
+
+    .menu-list li, .sub-menu li {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .menu li a{
+        border-radius: 0%;
+        font-size: 20px;
+        padding: 25px;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .menu-list li a:hover {
+        color: white;
+        background: #005121;
+        transition: 400ms;  
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0);
+    }
+
+
+    #menu-item:checked ~ ul{
+
+        right: 0px;
+    }
+
+}

@@ -1,0 +1,270 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    background-color: #d7ffe6;
+    border-bottom: solid 2px;
+    vertical-align: middle;
+}
+
+/* LOGO */ 
+.logo{
+    float:left;
+    width: 225px;
+    padding: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+h1{
+    color:#891022;
+    font-family: "LEMON MILK";
+}
+
+h2{
+    color:#891022;
+    font-family: "LEMON MILK";
+}
+
+body{
+
+    font-family: "Tw Cen MT";
+
+}
+
+
+
+/*FOOTER*/
+
+.redes{
+    float: left;
+    margin: 25px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+.redes img{
+    margin: 10px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+
+.mapa{
+
+    border: solid 1px;
+    border-radius: 10px;
+    float:right;
+    margin: 10px;
+
+}
+
+footer{
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    border-top: solid 2px;
+}
+
+footer h2{
+    display: block;
+    padding-left: 22px;
+    padding-top: 15px;
+    color: white;
+}
+
+footer a{
+    color: white;
+    font-size: 20px;
+}
+
+@media(max-width: 800px){
+
+    footer a{
+        font-size: 14px;
+    }
+}
+
+
+/*Carrito de compra*/
+
+
+.carrito-activo{
+    margin:auto;
+	display:inline-block;
+    padding: 7px;
+    background-color: brown;
+    border: 2px solid brown;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+.carrito-activo:hover{
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.288);
+    transition: 400ms;
+}
+
+/*
+.carrito-activo .carrito-compra{
+    background-color: brown;
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 10px;
+}
+*/
+.carrito-activo .carrito-compra img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.carrito-compra{
+    color: black;
+}
+
+.carrito-activo a{
+    color: white;
+    text-align: center;
+}
+
+.carrito-activo img{
+    filter: invert();
+}
+
+.carrito:hover > a{
+    color: white;
+}
+
+.carrito:hover > a img{
+    filter: invert();
+    transition: 400ms;
+}
+/*Fin carrito activo*/
+
+
+/*Servicios */
+.nuestros-servicios{
+    text-align: center;
+    padding: 20px;
+    background-color: #B6DAFF;
+    color: black;
+}
+.contenedor-servicios{
+    background-color: #B6DAFF;
+    margin: 0%;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: "tarjeta     tarjeta     tarjeta";
+
+}
+.contenedor-servicios .tarjeta{
+    margin:25px;
+    border-radius: 20px;
+    background-color: #5DACFF;
+    transition: 300ms;
+}
+
+.contenedor-servicios img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.contenedor-servicios > .tarjeta{
+    display: block;
+    padding: 20px;
+}
+
+.contenedor-servicios .tarjeta:hover{
+    background-color: #3498FF;
+    transition: 300ms;
+}
+
+.cambio-imagen{
+    background-image: url('./img/acercade/tienda.jpg');
+    width: 50%;
+    height: 60%;
+    background-position: center;
+}
+
+.contenedor-servicios .tarjeta:hover > .cambio-imagen{
+    background-image: url('./img/accesorios/cables.jpg');
+    transition: 300ms;
+
+}
+
+.titulos-tarjeta{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.boton-venta{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid rgb(105, 30, 30);
+    border-radius: 5px;
+    display: inline-block;
+    transition: 200ms;
+}
+
+.contenedor-servicios .tarjeta:hover > .boton-venta{
+    
+    color: white;
+}
+
+.boton-venta:hover{
+    transition: 200ms;
+    background-color: rgb(105, 30, 30);
+    color: white;
+}
+
+
+
+
+
+
+
+/*Audio*/
+
+.audio-store{
+    background-color: #FFDED7;
+    text-align: center;
+
+    
+}
+
+.audio-store audio{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    color: #891022;
+}
+
+.audio-store h3{
+    padding-top: 20px;
+    font-family: LEMON MILK;
+}
+
+
+
+
+/*Fuente de texto*/
+@font-face {
+    font-family: "LEMON MILK";
+    src: url("./fonts/LEMONMILK-Regular.otf");
+}
+

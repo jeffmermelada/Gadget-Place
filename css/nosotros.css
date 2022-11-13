@@ -1,0 +1,26 @@
+.contenedor{
+    max-width: 100%;
+    flex-basis: calc(35% -1rem);
+    background-color: rgb(255, 227, 133);
+    border-bottom: 2px solid   black;
+}
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sub-contenedor{
+    
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.subtitulo-articulos{
+
+    padding: 10px;
+    text-align: center;
+    color: black;
+}

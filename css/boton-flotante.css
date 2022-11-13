@@ -1,0 +1,49 @@
+/*Boton WhatsApp*/
+.whatsapp {
+    background-color:#ffffff;
+    color:#FFF;
+    position:fixed;
+    display: flex;
+    width:70px;
+    height: 70px;
+    bottom:20px;
+    right:30px;
+    text-align:center;
+    font-size:30px;
+    z-index:90;
+    border-radius: 15%;
+    transition: 300ms;
+    align-items: center;
+  }
+  
+.whatsimg{
+    display: block;
+    margin: auto;
+    top: 25px;
+    width:50px;
+    height: 50px;
+}
+
+.mensaje-whatsapp{
+    transition: 200ms;
+    position: fixed;
+    bottom: 35px;
+    right: -50px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.863);
+    opacity: 0;
+} 
+
+.whatsapp:hover{
+    transition: 300ms;
+    box-shadow: 7px 5px 20px rgba(0, 0, 0, 0.493);
+}
+
+.whatsapp-boton:hover > .mensaje-whatsapp{ 
+    transition: 200ms;
+    right: 90px;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 7px 5px 20px rgba(0, 0, 0, 0.493);
+
+}

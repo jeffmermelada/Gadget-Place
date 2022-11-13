@@ -1,0 +1,32 @@
+/*barra de busqueda */
+
+.barra-busqueda{
+    left: 75%;
+    display: inline;
+    margin: 65px;
+    vertical-align: middle;
+}
+
+.contenedor-busqueda input#search{
+    width: 200px;
+    height: 35px;
+    background: #47B071;
+    border: none;
+    font-size: 10pt;
+    color: #ffffff;
+    padding-left: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#search::placeholder{
+    color: white;
+}
+
+.contenedor-busqueda i{
+    margin:auto;
+    padding: 5px;
+    z-index: 1;
+    color: #000000;
+    display: inline-block;
+}
